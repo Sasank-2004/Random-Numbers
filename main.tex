@@ -298,11 +298,12 @@ Let $U$ be a uniform random variable between 0 and 1.
 \\
 \solution Download the following  C code.
 \begin{lstlisting}
-https://github.com/Sasank-2004/Random-Numbers/blob/main/codes/uniform.c 
+wget https://raw.githubusercontent.com/Sasank-2004/Random-Numbers/main/codes/1.1.c
+wget https://raw.githubusercontent.com/Sasank-2004/Random-Numbers/main/codes/coeffs.h
 \end{lstlisting}
 Use the following commands to execute the C code.
 \begin{lstlisting}
-gcc uniform.c
+gcc 1.1.c -lm
 ./a.out 
 \end{lstlisting}
 %
@@ -314,11 +315,11 @@ F_{U}(x) = \pr{U \le x}
 \\
 \solution  The following code plots Fig. \ref{fig:uni_cdf}
 \begin{lstlisting}
-https://github.com/Sasank-2004/Random-Numbers/blob/main/codes/uniform_cdf_plot.py 
+wget https://raw.githubusercontent.com/Sasank-2004/Random-Numbers/main/codes/1.2.py
 \end{lstlisting}
 Use the following command to execute the python code.
 \begin{lstlisting}
-python3 uniform_cdf_plot.py
+python3 1.2.py
 \end{lstlisting}
 \begin{figure}[h]
 \centering
@@ -371,11 +372,11 @@ and its variance as
 Write a C program to  find the mean and variance of $U$. \\
 \solution The following C Code gives the mean and variance. 
 \begin{lstlisting}
-https://github.com/Sasank-2004/Random-Numbers/blob/main/codes/uniform_mean_and_variance.c
+wget https://raw.githubusercontent.com/Sasank-2004/Random-Numbers/main/codes/1.4.c
 \end{lstlisting}
 Use the following commands to execute the C code.
 \begin{lstlisting}
-gcc uniform_mean_and_variance.c
+gcc 1.4.c -lm
 ./a.out
 \end{lstlisting}
 \item Verify your result theoretically given that
@@ -426,11 +427,11 @@ and save in a file called gau.dat
 %
 \solution  Download the following  C code.
 \begin{lstlisting}
-https://github.com/Sasank-2004/Random-Numbers/blob/main/codes/gaussian.c 
+wget https://raw.githubusercontent.com/Sasank-2004/Random-Numbers/main/codes/2.1.c
 \end{lstlisting}
 Use the following commands to execute the C code.
 \begin{lstlisting}
-gcc gaussian.c
+gcc 2.1.c -lm
 ./a.out 
 \end{lstlisting}
 \item
@@ -438,11 +439,11 @@ Load gau.dat in python and plot the empirical CDF of $X$ using the samples in ga
 \\
 \solution The following code plots Fig. \ref{fig:gau_cdf}
 \begin{lstlisting}
-https://github.com/Sasank-2004/Random-Numbers/blob/main/codes/uniform_cdf_plot.py 
+wget https://raw.githubusercontent.com/Sasank-2004/Random-Numbers/main/codes/2.2.py
 \end{lstlisting}
 Use the following command to execute the python code.
 \begin{lstlisting}
-python3 gaussian_cdf_plot.py
+python3 2.2.py
 \end{lstlisting}
 \begin{figure}[h]
 \centering
@@ -459,11 +460,11 @@ What properties does the PDF have?
 \\
 \solution The PDF of $X$ is plotted in Fig. \ref{fig:gau_pdf} using the code below
 \begin{lstlisting}
-https://github.com/Sasank-2004/Random-Numbers/blob/main/codes/gaussian_pdf_plot.py 
+wget https://raw.githubusercontent.com/Sasank-2004/Random-Numbers/main/codes/2.3.py
 \end{lstlisting}
 Use the following command to execute the python code.
 \begin{lstlisting}
-python3 gaussian_pdf_plot.py
+python3 2.3.py
 \end{lstlisting}
 \pagebreak
 \begin{figure}[h]
@@ -476,11 +477,11 @@ python3 gaussian_pdf_plot.py
 \item Find the mean and variance of $X$ by writing a C program.
 \solution The following C Code gives the mean and variance. 
 \begin{lstlisting}
-https://github.com/Sasank-2004/Random-Numbers/blob/main/codes/gaussian_mean_and_variance.c
+wget https://raw.githubusercontent.com/Sasank-2004/Random-Numbers/main/codes/2.4.c
 \end{lstlisting}
 Use the following commands to execute the C code.
 \begin{lstlisting}
-gcc gaussian_mean_and_variance.c
+gcc 2.4.c -lm
 ./a.out
 \end{lstlisting}
 \item Given that 
@@ -538,14 +539,14 @@ V = -2\ln\brak{1-U}
 and plot its CDF.  \\
 \solution Download the following codes
 \begin{lstlisting}
-https://github.com/Sasank-2004/Random-Numbers/blob/main/codes/variable.c
-https://github.com/Sasank-2004/Random-Numbers/blob/main/codes/variable_cdf_plot.py
+wget https://raw.githubusercontent.com/Sasank-2004/Random-Numbers/main/codes/3.1.c
+wget https://raw.githubusercontent.com/Sasank-2004/Random-Numbers/main/codes/3.2.c
 \end{lstlisting}
 Use the following commands to execute the C code and Python code.
 \begin{lstlisting}
-gcc variable.c -lm
+gcc 3.1.c -lm
 ./a.out
-python3 variable_cdf_plot.py
+python3 3.2.py
 \end{lstlisting}
 \begin{figure}[h]
 \centering
