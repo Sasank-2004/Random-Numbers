@@ -14,7 +14,6 @@ for i in range(0,30):
 	err_ind = np.nonzero(randvar < x[i]) 
 	err_n = np.size(err_ind) 
 	err.append(err_n/simlen) 
-	y.append(F(x[i]))
 
 vec_y = scipy.vectorize(F,otypes=[float])
 plt.plot(x.T,err)
