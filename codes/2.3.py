@@ -9,7 +9,7 @@ x = np.linspace(-maxlim,maxlim,maxrange)
 simlen = int(1e6) 
 err = [] 
 pdf = []
-h = 2*maxlim/(maxrange-1);
+h = 2*maxlim/(maxrange-1)
 randvar = np.loadtxt('gau.dat',dtype='double')
 
 for i in range(0,maxrange):
